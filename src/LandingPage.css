@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.share-boxes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.share-boxes img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.dotted-line {
+  width: 30px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.dotted-line2 {
+  width: 30px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.refer-form-sec {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.refer-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.refer-form ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.refer-form ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.refer-form ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.refer-form-content {
+  margin-top: 20px;
+}
+
+.refer-form-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.refer-form-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.refer-form-content form {
+  margin-bottom: 20px;
+}
+
+.refer-form-content form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+.refer-form-content form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  display: block;
+}
+
+.refer-form-content form button:hover {
+  background-color: #0056b3;
+}
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #007bff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.referal-progress {
+  text-align: left;
+}
+
+.referal-progress h2 {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #007bff;
+  color: white;
+}
